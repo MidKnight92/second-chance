@@ -27,7 +27,7 @@ class UserProfile extends Component {
 	getUser = async (req, res, next) => {
 		// console.log(this.state.user);
 		try {
-			const users = await fetch(process.env.REACT_APP_API_URL + `/users/${this.state.user}`, {
+			const users = await fetch(process.env.REACT_APP_BACKEND_URL + `/users/${this.state.user}`, {
                 credentials: 'include',
                 method: "GET"
             });

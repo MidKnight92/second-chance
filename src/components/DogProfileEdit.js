@@ -28,7 +28,7 @@ class DogProfileEdit extends Component {
     	// console.log('you hit the deleteDog!!!!')
      //    console.log('THIS IS E ----->>>>', e)
         try {
-            const deleteDogResponse = await fetch(process.env.REACT_APP_API_URL + `/dogs/${this.state.dog}`, {
+            const deleteDogResponse = await fetch(process.env.REACT_APP_BACKEND_URL + `/dogs/${this.state.dog}`, {
                 method: 'DELETE',
                 credentials: 'include'
             });
@@ -55,7 +55,7 @@ class DogProfileEdit extends Component {
     handleSubmit = async (e) => {
         e.preventDefault()
         try {
-            const url = process.env.REACT_APP_API_URL + `/dogs/${this.state.dog}`
+            const url = process.env.REACT_APP_BACKEND_URL + `/dogs/${this.state.dog}`
 
             const updateResponse = await fetch(url, {
                 method: "PUT",

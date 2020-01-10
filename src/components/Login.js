@@ -19,7 +19,7 @@ class Login extends Component {
     handleSubmit = async (e) => {
         e.preventDefault();
         const loginResponse = await fetch(
-            process.env.REACT_APP_API_URL + '/users/login', {
+            process.env.REACT_APP_BACKEND_URL + '/users/login', {
                 method: 'POST',
                 credentials: 'include',
                 body: JSON.stringify(this.state),

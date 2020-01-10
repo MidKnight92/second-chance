@@ -34,7 +34,7 @@ class AdoptForm extends Component {
 	handleSubmit = async (e) => {
 		// console.log('this is preventDefault');
 		e.preventDefault();
-		const adoptResponse = await fetch(process.env.REACT_APP_API_URL + '/dogs/adopt',{
+		const adoptResponse = await fetch(process.env.REACT_APP_BACKEND_URL + '/dogs/adopt',{
 			method: 'POST',
 			credentials: 'include',
 			body: JSON.stringify(this.state),

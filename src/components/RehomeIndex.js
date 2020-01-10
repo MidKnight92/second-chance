@@ -27,7 +27,7 @@ class RehomeIndex extends Component {
     }
     getDogs = async (req, res) => {
         try {
-            const dogs = await fetch(process.env.REACT_APP_API_URL + '/dogs/rehome', {
+            const dogs = await fetch(process.env.REACT_APP_BACKEND_URL + '/dogs/rehome', {
                 credentials: 'include',
                 method: "GET"
             });

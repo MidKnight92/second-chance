@@ -23,7 +23,7 @@ class RegisterForm extends Component {
     handleSubmit = async (e) => {
         e.preventDefault();
         // console.log("we prevented Default")
-        const registerResponse = await fetch(process.env.REACT_APP_API_URL + '/users/register', {
+        const registerResponse = await fetch(process.env.REACT_APP_BACKEND_URL + '/users/register', {
             method: 'POST',
             credentials: 'include',
             body: JSON.stringify(this.state),

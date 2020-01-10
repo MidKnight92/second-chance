@@ -29,7 +29,7 @@ class ShelterIndex extends Component {
     }
     getDogs = async (req, res) => {
         try {
-            const dogs = await fetch(process.env.REACT_APP_API_URL + '/dogs/shelter', {
+            const dogs = await fetch(process.env.REACT_APP_BACKEND_URL + '/dogs/shelter', {
                 credentials: 'include',
                 method: "GET"
             });

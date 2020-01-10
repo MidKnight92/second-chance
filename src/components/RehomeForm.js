@@ -37,7 +37,7 @@ class RehomeForm extends Component {
     }
     handleSubmit = async (e) => {
         e.preventDefault();
-        const rehomeResponse = await fetch(process.env.REACT_APP_API_URL + '/dogs/new', {
+        const rehomeResponse = await fetch(process.env.REACT_APP_BACKEND_URL + '/dogs/new', {
             method: 'POST',
             credentials: 'include',
             body: JSON.stringify(this.state),

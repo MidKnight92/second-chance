@@ -12,6 +12,11 @@ mymockup.html
 # production
 /build
 
+
+# env
+.env.production
+.env.development
+
 # misc
 .DS_Store
 .env.local
