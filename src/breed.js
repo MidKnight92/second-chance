@@ -262,3 +262,5 @@ const breed = [
 // breed.map((breed) => {
 // 	console.log(`<option value="${breed}">${breed}</option>`);
 // })
+
+export default breed;
